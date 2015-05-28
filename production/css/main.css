@@ -79,6 +79,32 @@
 .col-1-12 {
 	width:8.33%;
 }
+/*---- This contains all of the typography----*/
+h1 {
+	font-family: 'Bebas Neue';
+}
+
+h2 {
+	font-family: 'Bebas Neue';
+	font-size:58px;
+}
+
+p {
+   font-family: 'Open Sans';
+   font-size:23px;	
+}
+
+a {
+	font-family: 'Bebas Neue';
+	font-size:35px;
+}
+
+.itemdescription {
+	color:#CB1D51;
+	font-size:18px;	
+}
+
+/*---- End of Typography----*/
 
 @media screen and (max-width:768px) {
 .wrapper {
