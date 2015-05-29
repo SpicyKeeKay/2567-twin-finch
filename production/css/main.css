@@ -97,6 +97,9 @@ p {
 a {
 	font-family: 'Bebas Neue';
 	font-size:35px;
+	color:#fff;
+	background-color:#000;
+	padding:15px 10px 8px 10px;
 }
 
 .itemdescription {
@@ -105,6 +108,12 @@ a {
 }
 
 /*---- End of Typography----*/
+
+/*--- Pseudo Selectors---*/
+
+a:hover {
+	background-color:#CB1D51;
+}
 
 @media screen and (max-width:768px) {
 .wrapper {
