@@ -6,6 +6,10 @@
 	-moz-box-sizing:border-box;
 }
 
+body {
+	font-size:23px;
+}
+
 .wrapper {
 	width:70%;
 	margin: 0 auto;
@@ -13,7 +17,7 @@
 
 .row {
 	width:100%;
-	padding-bottom:20px;	
+	padding-bottom:10px;	
 }
 
 .row:after {
@@ -34,6 +38,10 @@
 
 .col-1-1 {
 	width:100%;
+}
+
+.col-2-3 {
+	width:66%;
 }
 
 .col-1-2 {
@@ -79,24 +87,98 @@
 .col-1-12 {
 	width:8.33%;
 }
+/*----- Header -----*/
+header {
+	background-color:black;
+}
+
+#toplogo {
+	padding:20px 0 0 30px;
+}
+
+header nav ul li a {
+	text-transform:uppercase;
+	color:#FFF;
+	font-size:19px;
+	font-family: 'Open Sans';
+	padding-right:15px;
+}
+
+nav ul li {
+	list-style-type:none;
+	display:inline-block;
+}
+
+header nav ul {
+	padding:45px 0 0 0;
+}
+
+
+header nav ul li:first-child {
+	padding-left:;
+}
+/*----- Header ends -----*/
+
+/*----- Hero Starts -----*/
+
+#heroheader {
+	text-align:center;
+}
+
+/*----- Hero Ends -------*/
+
+/*----- Pre-Roast Starts -------*/
+
+#preroast {
+	text-align:center;
+}
+
+/*----- Pre-Roast Ends ---------*/
+
+/*----- Products Starts ---------*/
+
+.itemdescription {
+	color:#CB1D51;
+	font-size:18px;	
+	text-align:center;
+}
+
+
+/*----- Products Ends -----------*/
+
+
+.center-block {
+	float:none !important;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.hidden-lg {
+	display:none;
+}
+
 /*---- This contains all of the typography----*/
 h1 {
-	font-family: 'Bebas Neue';
+	font-family: 'Oswald';
+	text-transform:uppercase;
+	font-size:50px;
 }
 
 h2 {
-	font-family: 'Bebas Neue';
-	font-size:58px;
+	font-family: 'Oswald';
+	text-transform:uppercase;
+	font-size:50px;
 }
 
 p {
    font-family: 'Open Sans';
-   font-size:23px;	
+   font-size:1 rem;	
 }
 
 a {
-	font-family: 'Bebas Neue';
-	font-size:35px;
+	font-family: 'Oswald';
+	text-transform:uppercase;
+	font-size:18px;
 	color:#fff;
 	background-color:#000;
 	padding:15px 10px 8px 10px;
@@ -114,15 +196,21 @@ a {
 a:hover {
 	background-color:#CB1D51;
 }
+/*-- Pseudo Selectors---*/
 
 @media screen and (max-width:768px) {
+
+.hidden-lg {
+	display:block;
+}
+
 .wrapper {
 	width:95%;
 }
 
 [class*='col-'] {
 	float:left;
-	padding:0 20px 25px 0;
+
 	font-size:13px;
 }
 
