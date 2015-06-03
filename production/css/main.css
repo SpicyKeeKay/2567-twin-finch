@@ -121,9 +121,17 @@ header nav ul li:first-child {
 
 /*----- Hero Starts -----*/
 
-#heroheader {
-	text-align:center;
+#heroimg {
+	background:url(../img/herobeans.png) no-repeat;
 }
+
+.herotextcontent {
+	color:#fff;
+	text-align:center;
+    
+}
+
+
 
 /*----- Hero Ends -------*/
 
