@@ -7,7 +7,7 @@
 }
 
 body {
-	font-size:23px;
+	font-size:22px;
 }
 
 .wrapper {
@@ -145,10 +145,30 @@ header nav ul li:first-child {
 
 /*----- Products Starts ---------*/
 
+.display-block {
+	display:block;
+}
+
+.productheader {
+	text-align:center;
+	margin-bottom:-5px;
+}
+.productparagraph {
+	text-align:center;
+	padding:0px 30px 0 30px;
+	font-size:1 rem;	
+}
+
 .itemdescription {
 	color:#CB1D51;
-	font-size:18px;	
+	font-size:1rem;	
 	text-align:center;
+	padding: 0 20px 0 20px;
+}
+
+.addtocart {
+	text-align:center;
+	margin:30px;
 }
 
 
@@ -159,6 +179,10 @@ header nav ul li:first-child {
 	float:none !important;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.display-block {
+	display:block;
 }
 
 .hidden-lg {
@@ -189,12 +213,7 @@ a {
 	font-size:18px;
 	color:#fff;
 	background-color:#000;
-	padding:15px 10px 8px 10px;
-}
-
-.itemdescription {
-	color:#CB1D51;
-	font-size:18px;	
+	padding:10px 10px 8px 10px;
 }
 
 /*---- End of Typography----*/
