@@ -7,11 +7,11 @@
 }
 
 body {
-	font-size:22px;
+	font-size:24px;
 }
 
 .wrapper {
-	width:70%;
+	width:71%;
 	margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ body {
 
 [class*='col-'] {
 	float:left;
-	padding:0 20px 20px 0;
+	padding:0 .83rem .83rem 0;
 }
 
 [class*='col-']:last-of-type {
@@ -93,15 +93,16 @@ header {
 }
 
 #toplogo {
-	padding:20px 0 0 30px;
+	padding:.83rem 0 0 1.25rem;
 }
 
 header nav ul li a {
 	text-transform:uppercase;
+	text-decoration:none;
 	color:#FFF;
-	font-size:19px;
+	font-size:1rem;
 	font-family: 'Open Sans';
-	padding-right:15px;
+	padding-right:.83rem;
 }
 
 nav ul li {
@@ -110,12 +111,12 @@ nav ul li {
 }
 
 header nav ul {
-	padding:45px 0 0 0;
+	padding:1.45rem 0 0 0;
 }
 
 
 header nav ul li:first-child {
-	padding-left:;
+	padding-left:235px;
 }
 /*----- Header ends -----*/
 
@@ -123,14 +124,20 @@ header nav ul li:first-child {
 
 #heroimg {
 	background:url(../img/herobeans.png) no-repeat;
+	margin-top:-35px;
 }
 
-.herotextcontent {
+.rowheader {
 	color:#fff;
 	text-align:center;
-    
+	padding:30px 0 0 0;   
 }
 
+.rowpara {
+	color:#fff;
+	text-align:center;
+	margin-top:-15px;
+}
 
 
 /*----- Hero Ends -------*/
@@ -139,6 +146,8 @@ header nav ul li:first-child {
 
 #preroast {
 	text-align:center;
+	margin:30px 0 20px 0;
+	color:black;
 }
 
 /*----- Pre-Roast Ends ---------*/
@@ -151,11 +160,11 @@ header nav ul li:first-child {
 
 .productheader {
 	text-align:center;
-	margin-bottom:-5px;
+	margin:-10px 0 -5px 0;
 }
 .productparagraph {
 	text-align:center;
-	padding:0px 30px 0 30px;
+	padding:0px 40px 0 40px;
 	font-size:1 rem;	
 }
 
@@ -166,13 +175,84 @@ header nav ul li:first-child {
 	padding: 0 20px 0 20px;
 }
 
+#housedescription {
+	font-size:.98rem;
+}
+
 .addtocart {
 	text-align:center;
 	margin:30px;
 }
 
-
+#oakpadding {
+	padding:0 100px 0 100px;
+}
 /*----- Products Ends -----------*/
+
+/*----- Notice Starts -----------*/
+
+#checkoutheader {
+	font-size:1.5rem;
+	text-align:center;
+}
+
+#checkoutbutton {
+	font-size:2rem;
+	
+}
+
+#noticeparagraph {
+	font-size:.9rem;
+	text-align:center;
+	padding:0 1.2rem 1.5rem 1.2rem;
+}
+
+/*----- Notice Ends -------------*/
+
+/*----- How to Roast Starts -----*/
+
+#howto-row {
+	background:black;
+}
+
+#roastheader {
+	padding:0 0 0 0;
+}
+
+#roastpara {
+	color:#fff;
+	padding: 0 30px 0 30px;
+}
+
+#howtobutton {
+	color:black;
+	background-color:#fff;
+	text-align:center;
+	margin:30px;
+}
+
+#howtobutton a:hover {
+	
+}
+
+/*----- How to Roast Ends ------*/
+
+/*----- Map Starts -----*/
+
+#mapheader {
+	color:#fff;
+	text-align:center;
+	padding:-10px 0 0 0;   
+}
+
+#map {
+	margin:-10px 0 0 0;
+	background:url(../img/map-background.jpg) no-repeat;
+}
+
+
+/*----- Map Ends -------*/
+
 
 
 .center-block {
@@ -204,7 +284,8 @@ h2 {
 
 p {
    font-family: 'Open Sans';
-   font-size:1 rem;	
+   font-size:1rem;
+   line-height:20pt;	
 }
 
 a {
