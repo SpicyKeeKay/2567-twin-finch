@@ -93,7 +93,7 @@ header {
 }
 
 #toplogo {
-	padding:.83rem 0 0 1.25rem;
+	padding:1.7rem 0 1.45rem 1.95rem;
 }
 
 header nav ul li a {
@@ -111,7 +111,7 @@ nav ul li {
 }
 
 header nav ul {
-	padding:1.45rem 0 0 0;
+	padding:2.55rem 0 0 0;
 }
 
 
@@ -124,19 +124,28 @@ header nav ul li:first-child {
 
 #heroimg {
 	background:url(../img/herobeans.png) no-repeat;
-	margin-top:-35px;
+	margin-top:-2.1rem;
+	background-position:0% 45%;
 }
 
 .rowheader {
 	color:#fff;
 	text-align:center;
-	padding:30px 0 0 0;   
+	padding:1.45rem 0 0 0;   
+}
+
+#twinfinchheader {
+	padding:2.65rem 0 0 0;
 }
 
 .rowpara {
 	color:#fff;
 	text-align:center;
-	margin-top:-15px;
+	margin-top:-.625rem;
+}
+
+#twinfinchparagraph {
+	padding:0 0 1.15rem 0;  
 }
 
 
@@ -146,7 +155,7 @@ header nav ul li:first-child {
 
 #preroast {
 	text-align:center;
-	margin:30px 0 20px 0;
+	margin:3rem 0 .833rem 0;
 	color:black;
 }
 
@@ -156,6 +165,15 @@ header nav ul li:first-child {
 
 .display-block {
 	display:block;
+}
+
+#oakimage {
+	padding:0 0 0 4.5rem;
+}
+
+.oakleft {
+	text-align:left !important;	
+	
 }
 
 .productheader {
@@ -172,7 +190,7 @@ header nav ul li:first-child {
 	color:#CB1D51;
 	font-size:1rem;	
 	text-align:center;
-	padding: 0 20px 0 20px;
+	padding: 0 .833rem 0 .833rem;
 }
 
 #housedescription {
@@ -181,12 +199,9 @@ header nav ul li:first-child {
 
 .addtocart {
 	text-align:center;
-	margin:30px;
+	margin:1.25rem;
 }
 
-#oakpadding {
-	padding:0 100px 0 100px;
-}
 /*----- Products Ends -----------*/
 
 /*----- Notice Starts -----------*/
@@ -194,6 +209,7 @@ header nav ul li:first-child {
 #checkoutheader {
 	font-size:1.5rem;
 	text-align:center;
+	margin: 0 0 3rem 0;
 }
 
 #checkoutbutton {
@@ -204,7 +220,7 @@ header nav ul li:first-child {
 #noticeparagraph {
 	font-size:.9rem;
 	text-align:center;
-	padding:0 1.2rem 1.5rem 1.2rem;
+	padding:0 5rem 1.5rem 5rem;
 }
 
 /*----- Notice Ends -------------*/
@@ -221,18 +237,22 @@ header nav ul li:first-child {
 
 #roastpara {
 	color:#fff;
-	padding: 0 30px 0 30px;
+	padding: 0 4.25rem 0 4.25rem;
 }
 
 #howtobutton {
 	color:black;
 	background-color:#fff;
-	text-align:center;
-	margin:30px;
 }
 
-#howtobutton a:hover {
-	
+a#howtobutton:hover {
+	color:#fff;
+	background-color:#CB1D51;
+}
+
+.howtomapcenter {
+	text-align:center;
+	margin:2.5rem 0 3.45rem 0;
 }
 
 /*----- How to Roast Ends ------*/
@@ -250,8 +270,77 @@ header nav ul li:first-child {
 	background:url(../img/map-background.jpg) no-repeat;
 }
 
+.howtomapcenter {
+	text-align:center;
+	margin:2.5rem 0 3.45rem 0;
+}
+
 
 /*----- Map Ends -------*/
+
+/*----- Review Starts --*/
+
+#reviewsection {
+	background-color:black;
+	margin:-3.2rem 0 0 0;
+}
+
+#reviewheader {
+	padding:3rem 0 0 0;
+}
+
+h3 {
+	font-family: 'Oswald';
+	text-transform:uppercase;
+	margin:-2rem 0 0 0;
+}
+
+.review {
+	text-align:center;
+	color:#fff;
+}
+
+#reviewparagraph {
+	padding:0 6.5rem 0 6.5rem;
+}
+
+
+/*----- Review Ends ----*/
+
+/*----- Footer Starts --*/
+
+footer {
+	background-color:black;	
+}
+
+#footerdirection {
+	color:#fff;	
+}
+
+footer nav ul {
+	padding:1.45rem 0 0 0
+}
+
+footer nav ul li {
+	text-decoration:none;
+	padding-right:.33rem;
+}
+
+a.buttonhover:hover {
+	text-decoration:none;
+}
+
+#footerlogo {
+	padding:1.5rem 0 0 10rem;
+}
+
+/*
+footer nav ul li:first-child {
+	padding-left:5rem;
+}
+*/
+
+/*----- Footer Ends ----*/
 
 
 
