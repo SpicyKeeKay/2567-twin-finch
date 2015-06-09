@@ -90,6 +90,8 @@ body {
 /*----- Header -----*/
 header {
 	background-color:black;
+	position:fixed;
+	width:71%;
 }
 
 #toplogo {
@@ -111,19 +113,27 @@ nav ul li {
 }
 
 header nav ul {
-	padding:2.55rem 0 0 0;
+	padding:2.05rem 0 0 0;
 }
 
 
 header nav ul li:first-child {
-	padding-left:235px;
+	padding-left:14.4rem;
 }
 /*----- Header ends -----*/
 
 /*----- Hero Starts -----*/
 
+#aboutuslink .wrapper {
+	padding-top:140px;
+}
+
 #heroimg {
-	background:url(../img/herobeans.png) no-repeat;
+	background:url(../img/herobeans.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	margin-top:-2.1rem;
 	background-position:0% 45%;
 }
@@ -135,7 +145,8 @@ header nav ul li:first-child {
 }
 
 #twinfinchheader {
-	padding:2.65rem 0 0 0;
+	padding:2.75rem 0 0 0;
+	font-size:3rem;
 }
 
 .rowpara {
@@ -171,18 +182,28 @@ header nav ul li:first-child {
 	padding:0 0 0 4.5rem;
 }
 
+#eveningoakh2 {
+	padding:8.5rem 0 0 0;
+}
+
 .oakleft {
 	text-align:left !important;	
-	
+	font-size:1 rem;	
+	padding:0 3rem 0 0;
+}
+
+#oakdescription {
+	color:#CB1D51;
+	font-size:1rem;
 }
 
 .productheader {
 	text-align:center;
-	margin:-10px 0 -5px 0;
+	margin:-.416rem 0 -.208rem 0;
 }
 .productparagraph {
 	text-align:center;
-	padding:0px 40px 0 40px;
+	padding:0px 1.666rem 0 1.666rem;
 	font-size:1 rem;	
 }
 
@@ -260,19 +281,19 @@ a#howtobutton:hover {
 /*----- Map Starts -----*/
 
 #mapheader {
-	color:#fff;
+	color:black;
 	text-align:center;
 	padding:-10px 0 0 0;   
 }
 
-#map {
-	margin:-10px 0 0 0;
-	background:url(../img/map-background.jpg) no-repeat;
+#map-canvas {
+     width: 100%;
+     height: 400px;
+	 margin:0 0 3.75rem 0;
 }
-
-.howtomapcenter {
-	text-align:center;
-	margin:2.5rem 0 3.45rem 0;
+	  
+#locationpara {
+	color:black;
 }
 
 
@@ -307,6 +328,105 @@ h3 {
 
 /*----- Review Ends ----*/
 
+/*----- Contact & E News Starts -----*/
+
+label, input {
+	font-family: 'Open Sans';
+    font-size:1.2rem;
+	tect-align:center;
+		
+}
+
+label > input{
+	display:inline-block;	
+}
+
+label {
+	color:#fff;	
+}
+
+#logoform {
+	padding:2rem 0 0 0;
+}
+
+.formheaders {
+	color:#fff;	
+	margin:.4rem 0;
+}
+
+form {
+	background-color:black;
+	text-align:center;
+	padding:0 20px;
+	margin:1.5rem;
+}
+form input {
+	width:80%;
+	margin-bottom:20px;
+}
+
+form label {
+	display:none;
+}
+
+#enewsmargin {
+	padding:2rem 0 0 0;
+}
+
+::-webkit-input-placeholder {
+   text-align:center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;  
+}
+
+:-ms-input-placeholder {  
+   text-align:center; 
+}
+
+
+button {
+	font-family: 'Oswald';
+	font-size:1.5rem;
+	border:none; 
+	background:#CB1D51; 
+	color:#fff; 
+	cursor:pointer; 
+	padding:.5rem .6rem; 
+	margin:1rem 0;
+}
+
+a#howtobutton:hover {
+	color:#fff;
+	background-color:#CB1D51;
+	border-color:#FF1F23;
+}
+/*----- Contact & E News Ends -------*/
+
+/*----- Widgets Start ---------------*/
+
+.widgets {
+	background-color:black;
+	height:12rem;	
+	margin:1.45rem 3rem 1.45rem 0;
+}
+
+.widgetheader {
+	font-family: 'Oswald';
+	font-size:1.5rem;
+	color:#fff;
+	text-align:center;
+	padding:4rem;
+}
+
+/*----- Widgets End -----------------*/
+
+
 /*----- Footer Starts --*/
 
 footer {
@@ -318,7 +438,7 @@ footer {
 }
 
 footer nav ul {
-	padding:1.45rem 0 0 0
+	padding:1.45rem 0 0 0;
 }
 
 footer nav ul li {
@@ -331,14 +451,16 @@ a.buttonhover:hover {
 }
 
 #footerlogo {
-	padding:1.5rem 0 0 10rem;
+	margin:0 auto;
+	display:block;
+	padding:2rem 0 0 0;
 }
 
-/*
+
 footer nav ul li:first-child {
 	padding-left:5rem;
 }
-*/
+
 
 /*----- Footer Ends ----*/
 
@@ -362,13 +484,12 @@ footer nav ul li:first-child {
 h1 {
 	font-family: 'Oswald';
 	text-transform:uppercase;
-	font-size:50px;
 }
 
 h2 {
 	font-family: 'Oswald';
 	text-transform:uppercase;
-	font-size:50px;
+	font-size:3rem;
 }
 
 p {
@@ -392,6 +513,11 @@ a {
 
 a:hover {
 	background-color:#CB1D51;
+	cursor:pointer; 
+}
+
+a.mediahover:hover {
+	background-color:;
 }
 /*-- Pseudo Selectors---*/
 
@@ -411,9 +537,6 @@ a:hover {
 	font-size:13px;
 }
 
-.col-1-1 {
-	width:100%;
-}
 
 .col-1-2 {
 	width:50%;
@@ -460,5 +583,37 @@ a:hover {
 .col-1-12 {
 	width:25%;	
 }
-	
+
+.col-1-1, .full-width {
+	width:100%;
+}
+/*------ Header Starts -----*/
+header {
+	width:95%;
+}
+
+header nav ul li a {
+	font-size:.9rem;
+	padding-right:.53rem;
+}
+
+header nav ul {
+	padding:3.6rem 0 0 0;
+}
+
+header nav ul li:first-child {
+	padding-left:5.1rem;
+}
+
+/*------ Header Ends -----*/
+
+/*------ Hero Starts -----*/
+
+#twinfinchheader {
+	padding:1.65rem 0 0 0;
+	font-size:3rem;
+}
+
+/*------ Hero Ends -----*/
+
 }
