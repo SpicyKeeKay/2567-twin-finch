@@ -88,10 +88,11 @@ body {
 	width:8.33%;
 }
 /*----- Header -----*/
-header {
+#header {
 	background-color:black;
 	position:fixed;
 	width:71%;
+	z-index:1000;
 }
 
 #toplogo {
@@ -113,13 +114,10 @@ nav ul li {
 }
 
 header nav ul {
+	text-align:right;
 	padding:2.05rem 0 0 0;
 }
 
-
-header nav ul li:first-child {
-	padding-left:14.4rem;
-}
 /*----- Header ends -----*/
 
 /*----- Hero Starts -----*/
@@ -130,10 +128,10 @@ header nav ul li:first-child {
 
 #heroimg {
 	background:url(../img/herobeans.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	margin-top:-2.1rem;
 	background-position:0% 45%;
 }
@@ -145,7 +143,7 @@ header nav ul li:first-child {
 }
 
 #twinfinchheader {
-	padding:2.75rem 0 0 0;
+	padding:12.75rem 0 0 0;
 	font-size:3rem;
 }
 
@@ -163,11 +161,17 @@ header nav ul li:first-child {
 /*----- Hero Ends -------*/
 
 /*----- Pre-Roast Starts -------*/
-
-#preroast {
+#ourroastlink {
 	text-align:center;
-	margin:3rem 0 .833rem 0;
+}
+
+#ourroastlink h2 {
+	margin:-.416rem 0 -.208rem 0;
 	color:black;
+}
+
+h2#preroast {
+	margin:3rem 0 .833rem 0;
 }
 
 /*----- Pre-Roast Ends ---------*/
@@ -186,8 +190,10 @@ header nav ul li:first-child {
 	padding:8.5rem 0 0 0;
 }
 
+#evening-oak {
+	text-align:left;
+}
 .oakleft {
-	text-align:left !important;	
 	font-size:1 rem;	
 	padding:0 3rem 0 0;
 }
@@ -197,12 +203,12 @@ header nav ul li:first-child {
 	font-size:1rem;
 }
 
-.productheader {
-	text-align:center;
-	margin:-.416rem 0 -.208rem 0;
+#addoak {
+	text-align:left;
 }
+
+
 .productparagraph {
-	text-align:center;
 	padding:0px 1.666rem 0 1.666rem;
 	font-size:1 rem;	
 }
@@ -210,7 +216,6 @@ header nav ul li:first-child {
 .itemdescription {
 	color:#CB1D51;
 	font-size:1rem;	
-	text-align:center;
 	padding: 0 .833rem 0 .833rem;
 }
 
@@ -219,8 +224,7 @@ header nav ul li:first-child {
 }
 
 .addtocart {
-	text-align:center;
-	margin:1.25rem;
+	margin:1.75rem 0;
 }
 
 /*----- Products Ends -----------*/
@@ -244,6 +248,11 @@ header nav ul li:first-child {
 	padding:0 5rem 1.5rem 5rem;
 }
 
+#noticeheader {
+	font-family: 'Oswald';
+	text-align:center;
+	margin-top:2.1rem;
+}
 /*----- Notice Ends -------------*/
 
 /*----- How to Roast Starts -----*/
@@ -304,6 +313,8 @@ a#howtobutton:hover {
 #reviewsection {
 	background-color:black;
 	margin:-3.2rem 0 0 0;
+	text-align:center;
+	color:#fff;
 }
 
 #reviewheader {
@@ -316,13 +327,14 @@ h3 {
 	margin:-2rem 0 0 0;
 }
 
-.review {
-	text-align:center;
-	color:#fff;
-}
-
 #reviewparagraph {
 	padding:0 6.5rem 0 6.5rem;
+}
+
+#coffeereview {
+	font-size: 1rem;
+	padding:0;
+	text-decoration:none;
 }
 
 
@@ -413,7 +425,7 @@ a#howtobutton:hover {
 .widgets {
 	background-color:black;
 	height:12rem;	
-	margin:1.45rem 3rem 1.45rem 0;
+	margin:.45rem 1rem 2.45rem 6.4rem;
 }
 
 .widgetheader {
@@ -433,12 +445,20 @@ footer {
 	background-color:black;	
 }
 
-#footerdirection {
+#footerdirectiontop {
+	padding:2.9rem 0 0 2rem;
+	margin:0 0 -1rem 0;
+}
+
+.footerdirection {
 	color:#fff;	
+	text-align:left;
+	padding:0 0 0 2rem;
 }
 
 footer nav ul {
-	padding:1.45rem 0 0 0;
+	padding:2.45rem 0 0 0;
+	text-align:right;
 }
 
 footer nav ul li {
@@ -456,9 +476,8 @@ a.buttonhover:hover {
 	padding:2rem 0 0 0;
 }
 
-
-footer nav ul li:first-child {
-	padding-left:5rem;
+a.socmed:hover {
+	background-color:black;
 }
 
 
@@ -516,9 +535,6 @@ a:hover {
 	cursor:pointer; 
 }
 
-a.mediahover:hover {
-	background-color:;
-}
 /*-- Pseudo Selectors---*/
 
 @media screen and (max-width:768px) {
@@ -588,21 +604,18 @@ a.mediahover:hover {
 	width:100%;
 }
 /*------ Header Starts -----*/
-header {
+#header {
 	width:95%;
 }
 
-header nav ul li a {
+#header nav ul li a {
 	font-size:.9rem;
 	padding-right:.53rem;
 }
 
-header nav ul {
+#header nav ul {
+	text-align:right;
 	padding:3.6rem 0 0 0;
-}
-
-header nav ul li:first-child {
-	padding-left:5.1rem;
 }
 
 /*------ Header Ends -----*/
@@ -613,7 +626,61 @@ header nav ul li:first-child {
 	padding:1.65rem 0 0 0;
 	font-size:3rem;
 }
+/*------ Hero Ends ------*/
 
-/*------ Hero Ends -----*/
+/*------ Roast Starts ---*/
+#roastpara {
+	color:#fff;
+	padding: 0 4.25rem 0 4.25rem;
+}
 
+#evening-oak {
+	text-align:center;
+}
+
+#addoak {
+	text-align:center;
+}
+
+#oakimage {
+	padding:0 0 0 0;
+}
+
+#eveningoakh2 {
+	padding:0 0 0 0;
+}
+
+#roastpara {
+	color:#fff;
+	padding: 0 4.25rem 0 4.25rem;
+}
+
+/*------Roast Ends ------*/
+
+/*------ Review Starts --*/
+
+#coffeereview {
+	padding:0 0 0 1.49rem;
+}
+
+/*------ Review ends --*/
+
+/*------ Widgets Starts ------*/
+
+.widgets {
+	margin:1rem 1rem 2.45rem 4.4rem;
+}
+
+/*------ Widgets Ends --------*/
+
+/*------ Footer Starts --*/
+footer nav ul li {
+	text-decoration:none;
+	padding-right:.23rem;
+}
+
+footer nav ul {
+	padding:2.75rem 0 0 0;
+}
+/*------ Footer Endss ---*/
 }
